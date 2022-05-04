@@ -1,9 +1,10 @@
 source "https://rubygems.org"
 
-ruby "2.5.1"
+ruby "2.7.6"
 
 gem "airbrake"
 gem "autoprefixer-rails"
+gem "bigdecimal", "~> 1.4.4"
 gem "bourbon", "~> 4.2.0"
 gem "flutie"
 gem "high_voltage"
