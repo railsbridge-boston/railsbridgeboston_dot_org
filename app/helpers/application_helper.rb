@@ -4,7 +4,7 @@ module ApplicationHelper
   end
 
   def venue_map_url
-    ENV.fetch("VENUE_MAP_URL")
+    ENV.fetch("VENUE_MAP_URL", "")
   end
 
   def data_links
