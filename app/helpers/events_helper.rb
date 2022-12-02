@@ -2,7 +2,7 @@ module EventsHelper
   def next_event
     OpenStruct.new(
       venue: venue,
-      url: ENV.fetch("EVENT_URL")
+      url: ENV.fetch("EVENT_URL", "")
     )
     # @next_event ||= Eventbrite::EventFinder.find(ENV.fetch("NEXT_EVENT_ID"))
   end
@@ -13,12 +13,12 @@ module EventsHelper
 
   def venue 
     OpenStruct.new(
-      name: ENV.fetch("VENUE_NAME"),
-      address: ENV.fetch("VENUE_ADDRESS")
+      name: ENV.fetch("VENUE_NAME", ""),
+      address: ENV.fetch("VENUE_ADDRESS", "")
     )
   end
 
   def show_registration?
-    ENV["HIDE_REGISTRATION"] != "true"
+    ENV["HIDE_REGISTRATION"] != "true" && next_event.url.present?
   end
 end

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-ruby "2.7.6"
+ruby "3.1.2"
 
 gem "airbrake"
 gem "autoprefixer-rails"
@@ -12,9 +12,9 @@ gem "httparty"
 gem "jquery-rails"
 gem "neat", "~> 1.7.0"
 gem "normalize-rails", "~> 3.0.0"
-gem "rack-contrib"
-gem "rails", "~> 4.2.11"
-gem "rake", "< 12.0"
+gem "puma"
+gem "rails", "~> 7.0"
+gem "rake"
 gem "refills"
 gem "sass-rails", "~> 5.0"
 gem "uglifier"
@@ -26,7 +26,7 @@ group :development, :test do
   gem "byebug"
   gem "dotenv-rails"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.1.0"
+  gem "rspec-rails"
 end
 
 group :test do
