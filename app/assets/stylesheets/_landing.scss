@@ -201,10 +201,6 @@
     border-top: 1px $blue-light solid;
   }
 
-  label {
-    color: $gray-light;
-  }
-
   input[type="submit"] {
     @include button-callout($secondary-button-color);
   }
@@ -215,15 +211,11 @@
     }
   }
 
-  #ml_embed_signup {
+  #mc_embed_signup {
     @include media($medium-screen) {
       @include shift(1 of 10);
       @include span-columns(5 of 10);
-    }
-
-    .input-group {
-      display: inline-block;
-      width: 45%;
+      margin-right: 0;
     }
   }
 }
