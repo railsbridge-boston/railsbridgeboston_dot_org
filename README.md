@@ -16,8 +16,8 @@ Running the app locally
 ----------------------
 
     $ ./bin/setup
-    $ heroku local
-    $ open http://localhost:5000
+    $ bin/rails server
+    $ open http://localhost:3000/
 
 Hiding registration
 -------------------

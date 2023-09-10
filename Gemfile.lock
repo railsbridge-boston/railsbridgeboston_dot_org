@@ -75,7 +75,6 @@ GEM
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
     awesome_print (1.9.2)
-    bigdecimal (1.4.4)
     bourbon (4.2.3)
       sass (~> 3.4)
       thor
@@ -264,7 +263,6 @@ DEPENDENCIES
   airbrake
   autoprefixer-rails
   awesome_print
-  bigdecimal (~> 1.4.4)
   bourbon (~> 4.2.0)
   bundler-audit
   byebug
@@ -293,3 +291,6 @@ DEPENDENCIES
 
 RUBY VERSION
    ruby 3.1.2p20
+
+BUNDLED WITH
+   2.4.19
