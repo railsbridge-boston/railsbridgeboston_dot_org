@@ -4,7 +4,6 @@ ruby "3.1.2"
 
 gem "airbrake"
 gem "autoprefixer-rails"
-gem "bigdecimal", "~> 1.4.4"
 gem "bourbon", "~> 4.2.0"
 gem "flutie"
 gem "high_voltage"
