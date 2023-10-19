@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+      args:
+        VARIANT: "3.2-bullseye"
+        NODE_VERSION: "18"
+        BUNDLER_VERSION: "2.4.6"
+        RAILS_VERSION: "7.0.5"
+
+    volumes:
+      - ..:/workspace
+
+    # Overrides default command so things don't shut down after the process ends.
+    command: sleep infinity
