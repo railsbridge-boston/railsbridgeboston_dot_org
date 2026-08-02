@@ -46,29 +46,6 @@
       line-height: 1.65;
     }
 
-    body::before,
-    body::after {
-      content: "";
-      position: fixed;
-      z-index: 0;
-      width: 22rem;
-      height: 22rem;
-      border: 1px solid rgba(185, 39, 47, 0.10);
-      pointer-events: none;
-    }
-
-    body::before {
-      top: -11rem;
-      right: -7rem;
-    }
-
-    body::after {
-      bottom: -13rem;
-      left: -8rem;
-      width: 28rem;
-      height: 28rem;
-    }
-
     main {
       position: relative;
       z-index: 1;
@@ -85,16 +62,6 @@
       box-shadow: var(--shadow);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 6px;
-      background: linear-gradient(90deg, var(--accent), #d8645f);
     }
 
     .eyebrow {
@@ -210,16 +177,15 @@
 <body>
   <main>
     <section class="card" aria-labelledby="page-title">
-      <p class="eyebrow">RailsBridge Boston</p>
-      <h1 id="page-title">Thank you</h1>
+      <h1 id="page-title">Thank You</h1>
 
-      <p class="lead">
+      <p>
         For 15 years, RailsBridge Boston introduced people of all backgrounds
-        to the concepts, tools, and techniques of Ruby and Rails development.
+        to Ruby and Rails development.
       </p>
 
       <p>
-        Led by an all-volunteer team of seasoned and enthusiastic Ruby and Rails
+        Led by an all-volunteer team of seasoned and enthusiastic
         developers, our workshops helped make technology careers more accessible
         and welcoming.
       </p>
@@ -232,8 +198,7 @@
       <hr class="divider">
 
       <p class="cta-copy">
-        The workshops are ending, but Boston’s Ruby community continues.
-        Stay in touch by joining an upcoming Boston Ruby Group event, where it all began!
+        Stay in touch by joining a Boston Ruby Group event, where it all began!
       </p>
 
       <a
