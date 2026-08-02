@@ -3,12 +3,9 @@ RailsBridge Boston Website
 
 [![CI](https://github.com/railsbridge-boston/railsbridgeboston_dot_org/workflows/CI/badge.svg)](https://github.com/railsbridge-boston/railsbridgeboston_dot_org/actions?query=workflow%3ACI)
 
-This is the website for RailsBridge Boston, a chapter of [RailsBridge]. You can
-check out the site at <http://www.railsbridgeboston.org>. This does *not*
-include any curriculum content.
+This was the website for RailsBridge Boston, a chapter of [RailsBridge]. 
 
-RailsBridge Boston organizes workshops for people in underrepresented groups and
-their friends to learn Ruby, Rails, and other web technologies.
+Since this repository is an archive only, <https://www.railsbridgeboston.org> serves the static site in [/docs](/docs).
 
 [RailsBridge]: http://www.railsbridge.org
 
