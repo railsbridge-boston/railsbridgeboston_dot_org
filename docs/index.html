@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A thank-you message from RailsBridge Boston after 15 years of service.">
+  <title>Thank You — RailsBridge Boston</title>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #f7f3ee;
+      --surface: rgba(255, 255, 255, 0.84);
+      --text: #27211f;
+      --muted: #6f625d;
+      --accent: #b9272f;
+      --accent-dark: #8f1820;
+      --border: rgba(76, 55, 49, 0.12);
+      --shadow: 0 24px 70px rgba(62, 42, 36, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      min-height: 100%;
+      background: var(--background);
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      overflow-x: hidden;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 12%, rgba(185, 39, 47, 0.10), transparent 34rem),
+        radial-gradient(circle at 88% 88%, rgba(116, 91, 74, 0.10), transparent 32rem),
+        linear-gradient(135deg, #fbf8f4 0%, #f2ece6 100%);
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      z-index: 0;
+      width: 22rem;
+      height: 22rem;
+      border: 1px solid rgba(185, 39, 47, 0.10);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    body::before {
+      top: -11rem;
+      right: -7rem;
+    }
+
+    body::after {
+      bottom: -13rem;
+      left: -8rem;
+      width: 28rem;
+      height: 28rem;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 760px);
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(36px, 7vw, 72px);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent), #d8645f);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 10ch;
+      margin: 0 0 28px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(3.2rem, 10vw, 6.6rem);
+      font-weight: 600;
+      letter-spacing: -0.055em;
+      line-height: 0.94;
+    }
+
+    .lead {
+      margin: 0 0 22px;
+      font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+      color: #3c312e;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 1.04rem;
+    }
+
+    strong {
+      font-weight: 750;
+    }
+
+    .divider {
+      width: 64px;
+      height: 3px;
+      margin: 34px 0;
+      border: 0;
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .cta-copy {
+      margin-bottom: 18px;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      color: white;
+      background: var(--accent);
+      font-weight: 750;
+      text-decoration: none;
+      transition:
+        transform 160ms ease,
+        background-color 160ms ease,
+        box-shadow 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: var(--accent-dark);
+      box-shadow: 0 12px 24px rgba(143, 24, 32, 0.22);
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(185, 39, 47, 0.30);
+      outline-offset: 4px;
+    }
+
+    .button svg {
+      width: 18px;
+      height: 18px;
+      flex: none;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      body {
+        padding: 16px;
+      }
+
+      .card {
+        border-radius: 22px;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+      }
+
+      .button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="card" aria-labelledby="page-title">
+      <p class="eyebrow">RailsBridge Boston</p>
+      <h1 id="page-title">Thank you</h1>
+
+      <p class="lead">
+        For 15 years, RailsBridge Boston introduced people of all backgrounds
+        to the concepts, tools, and techniques of Ruby and Rails development.
+      </p>
+
+      <p>
+        Led by an all-volunteer team of seasoned and enthusiastic Ruby and Rails
+        developers, our workshops helped make technology careers more accessible
+        and welcoming.
+      </p>
+
+      <p>
+        We are eternally grateful to every donor, organizer, volunteer, mentor,
+        student, and community partner who contributed to that mission.
+      </p>
+
+      <hr class="divider">
+
+      <p class="cta-copy">
+        The workshops are ending, but Boston’s Ruby community continues.
+        Stay in touch by joining an upcoming Boston Ruby Group event.
+      </p>
+
+      <a
+        class="button"
+        href="https://www.bostonrubygroup.com/"
+      >
+        Visit Boston Ruby Group
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M7 17 17 7M9 7h8v8"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </section>
+
+    <footer>
+      RailsBridge Boston
+    </footer>
+  </main>
+</body>
+</html>
